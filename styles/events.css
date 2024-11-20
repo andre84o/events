@@ -1,0 +1,61 @@
+:root {
+    --color-main: green;
+    --color-secondary: lightgreen;
+    --color-tertiary: beige;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+
+.header {
+    padding: 24px;
+    background-color: var(--color-secondary);
+}
+
+.header__page-title {
+    color: var(--color-main);
+    font-size: 3rem;
+    margin: 0;
+    text-align: center;
+}
+
+.animal-tabs {
+    background-color: var(--color-main);
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+.tab {
+    background-color: var(--color-tertiary);
+    border-radius: 10px;
+    padding: 8px 16px;
+}
+
+.active {
+    background-color: var(--color-secondary);
+    color: var(--color-tertiary)
+}
+
+.content {
+    display: none;
+    margin: 10px;
+    background-color: green;
+    color: var(--color-tertiary);
+    padding: 16px;
+}
+
+.featured {
+    display: block;
+}
